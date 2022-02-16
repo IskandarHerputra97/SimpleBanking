@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="SimpleBanking" customModuleProvider="target">
+            <connections>
+                <outlet property="accountHolderLabel" destination="aAA-mL-vK6" id="ico-xI-XBw"/>
+                <outlet property="accountHolderTitleLabel" destination="WGX-f7-MiX" id="sTK-ZR-jf7"/>
+                <outlet property="accountNumberLabel" destination="I0T-Gu-JLd" id="KPl-3m-xEt"/>
+                <outlet property="accountNumberTitleLabel" destination="fuv-pw-cFr" id="5lW-mc-5Bc"/>
+                <outlet property="headerContainerView" destination="ksm-eA-9IA" id="04c-Ht-IMR"/>
+                <outlet property="makeTransferButton" destination="lLa-PM-wfo" id="duE-0l-gPt"/>
+                <outlet property="tableView" destination="sl2-c7-zAU" id="HaM-i5-ByX"/>
+                <outlet property="totalBalanceLabel" destination="r7O-nv-way" id="LSq-wC-NWE"/>
+                <outlet property="totalBalanceTitleLabel" destination="gLT-Lb-GZg" id="rPD-z5-GgB"/>
+                <outlet property="transactionHistoryLabel" destination="mPe-ST-TKG" id="ciH-u2-z8s"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksm-eA-9IA">
+                    <rect key="frame" x="0.0" y="0.0" width="342" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="WPQ-tr-MKT">
+                            <rect key="frame" x="8" y="8" width="326" height="184"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLT-Lb-GZg">
+                                    <rect key="frame" x="0.0" y="0.0" width="326" height="29.333333333333332"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[SGD 21,421.33]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7O-nv-way">
+                                    <rect key="frame" x="0.0" y="32.333333333333343" width="326" height="34.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuv-pw-cFr">
+                                    <rect key="frame" x="0.0" y="70" width="326" height="24.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[3213-321-9923]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0T-Gu-JLd">
+                                    <rect key="frame" x="0.0" y="97.666666666666671" width="326" height="24.666666666666671"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Holder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGX-f7-MiX">
+                                    <rect key="frame" x="0.0" y="125.33333333333333" width="326" height="24.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Donald Trump]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAA-mL-vK6">
+                                    <rect key="frame" x="0.0" y="152.66666666666666" width="326" height="31.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="WPQ-tr-MKT" secondAttribute="bottom" constant="8" id="37J-wz-LcP"/>
+                        <constraint firstItem="WPQ-tr-MKT" firstAttribute="top" secondItem="ksm-eA-9IA" secondAttribute="top" constant="8" id="CNv-ed-NCd"/>
+                        <constraint firstAttribute="trailing" secondItem="WPQ-tr-MKT" secondAttribute="trailing" constant="8" id="Kvy-bg-PDc"/>
+                        <constraint firstAttribute="height" constant="200" id="fi3-Z2-xYT"/>
+                        <constraint firstItem="WPQ-tr-MKT" firstAttribute="leading" secondItem="ksm-eA-9IA" secondAttribute="leading" constant="8" id="h43-zD-qwl"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your transaction history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-ST-TKG">
+                    <rect key="frame" x="20" y="236" width="386" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sl2-c7-zAU">
+                    <rect key="frame" x="20" y="272.33333333333326" width="374" height="379.66666666666674"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLa-PM-wfo">
+                    <rect key="frame" x="20" y="688" width="374" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="B1q-zr-ya9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Make Transfer">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="makeTransferButtonDidTapped:" destination="-1" eventType="touchUpInside" id="mCj-aE-vpg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sl2-c7-zAU" secondAttribute="trailing" constant="20" id="1Im-im-gQF"/>
+                <constraint firstItem="mPe-ST-TKG" firstAttribute="top" secondItem="ksm-eA-9IA" secondAttribute="bottom" constant="36" id="3Xm-We-QG2"/>
+                <constraint firstItem="ksm-eA-9IA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="86R-nz-uSy"/>
+                <constraint firstItem="lLa-PM-wfo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="OlI-Dr-Ab5"/>
+                <constraint firstItem="sl2-c7-zAU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Z5l-OG-CVs"/>
+                <constraint firstItem="mPe-ST-TKG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="b86-nQ-Edx"/>
+                <constraint firstItem="ksm-eA-9IA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hLO-dX-BBL"/>
+                <constraint firstItem="lLa-PM-wfo" firstAttribute="top" secondItem="sl2-c7-zAU" secondAttribute="bottom" constant="36" id="iyH-fp-Le5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lLa-PM-wfo" secondAttribute="bottom" constant="8" id="j7C-Yp-1jt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ksm-eA-9IA" secondAttribute="trailing" constant="72" id="kfY-IF-k9g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mPe-ST-TKG" secondAttribute="trailing" constant="8" id="lhZ-JL-Fyp"/>
+                <constraint firstItem="sl2-c7-zAU" firstAttribute="top" secondItem="mPe-ST-TKG" secondAttribute="bottom" constant="16" id="vM3-zb-Z9F"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lLa-PM-wfo" secondAttribute="trailing" constant="20" id="xZa-4M-zU8"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="99.456521739130437"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
